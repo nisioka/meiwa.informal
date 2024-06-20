@@ -112,16 +112,6 @@ const BlogPostTemplate = ({
             </Link>
           </dd>
         </Dl>
-        <Dl>
-          <dt>タグ</dt>
-          {post.tags.map((tag, index) => {
-            return (
-              <dd key={`tag${index}`}>
-                <Link to={`/tag/${tag}/`}>{tag}</Link>
-              </dd>
-            )
-          })}
-        </Dl>
 
         <BlogEntry>
           <section itemProp="articleBody">

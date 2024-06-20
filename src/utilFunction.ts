@@ -63,9 +63,13 @@ export function mergePost(md?: MdPost, allFile?: AllFile) {
   } as CommonPost
 }
 
-const categoryNames: { eng: string; jp: string }[] = [
-  { eng: "one", jp: "1" },
+const categoryNames: { id: number; eng: string; jp: string }[] = [
+  { id: 1, eng: "one", jp: "園の手引" },
+  { id: 2, eng: "two", jp: "予定表" },
+  { id: 3, eng: "childcare", jp: "預かり保育" },
 ]
+
+export const categoryAll = categoryNames.sort(c => c.id).map(c => c.jp)
 
 export function convertCategory(japanese: string) {
   if (!japanese) return undefined

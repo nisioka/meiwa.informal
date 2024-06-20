@@ -1,7 +1,6 @@
 import * as React from "react"
 import Header from "./header"
 import Footer from "./footer"
-import TagCloud from "./tag-cloud"
 import CategoryAll from "./category-all"
 
 type LayoutProps = {
@@ -22,9 +21,6 @@ const Layout = ({ location, children }: LayoutProps) => {
       </div>
       <div className="grid-category">
         <CategoryAll />
-      </div>
-      <div className="grid-tag">
-        <TagCloud />
       </div>
       <div className="grid-footer">
         <Footer />

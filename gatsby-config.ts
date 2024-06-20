@@ -29,14 +29,14 @@ type allMarkdownRemark = {
 }
 
 const siteMetadata: SiteMetadata = {
-  title: `template`,
+  title: `明和幼稚園【松戸市稔台】非公式サイト`,
   author: {
-    name: `author`,
-    summary: `author summary`,
+    name: `meiwa informal`,
+    summary: `meiwa informal`,
     avatarImagePath: 'src/static/favicon.webp'
   },
-  description: `this is template`,
-  siteUrl: `https://localhost`,
+  description: `明和幼稚園【松戸市稔台】に関する情報を配信する非公式サイトです。`,
+  siteUrl: `https://meiwa.informal.tech.server-on.net`,
   social: {
     github: ``,
     twitter: ``,
@@ -50,18 +50,6 @@ const config: GatsbyConfig = {
   siteMetadata: siteMetadata,
   trailingSlash: "never",
   plugins: [
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: [
-          "G-G75Y1FWLC0", //GOOGLE_ANALYTICS_TRACKING_ID,
-          // "pub-3123919168024595",//GOOGLE_ADSENSE_ID,
-        ],
-        pluginConfig: {
-          head: true,
-        },
-      },
-    },
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
@@ -187,7 +175,7 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-disqus`,
       options: {
-        shortname: `https-sun0range-tech-server-on-net`,
+        shortname: `meiwa-informal`,
       },
     },
   ],

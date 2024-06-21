@@ -21,7 +21,7 @@ const LineFriend = () => {
       </h5>
       <ul>
         <li>
-          年少
+          <span>年少</span>
           <StaticImage
             src={"../../static/qr/firstYear.webp"}
             alt={""}
@@ -29,9 +29,23 @@ const LineFriend = () => {
           />
         </li>
         --------------------
-        <li>年中: Coming soon</li>
+        <li>
+          <span>年中</span>
+          <StaticImage
+            src={"../../static/qr/secondYear.webp"}
+            alt={""}
+            width={100}
+          />
+        </li>
         --------------------
-        <li>年長: Coming soon</li>
+        <li>
+          <span>年長</span>
+          <StaticImage
+            src={"../../static/qr/thirdYear.webp"}
+            alt={""}
+            width={100}
+          />
+        </li>
       </ul>
       <Link to="/other/line-friend">詳細</Link>
     </LineFriendAllTitle>

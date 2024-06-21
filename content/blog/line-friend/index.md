@@ -20,6 +20,6 @@ tags: ["LINE", "本日の活動"]
 
 ## QR コード
 
-|                   年少                   |    年中     |    年長     |
-| :--------------------------------------: | :---------: | :---------: |
-| <img src="/qr/firstYear.webp" width=200> | Coming soon | Coming soon |
+|                   年少                   |                   年中                    |                   年長                   |
+| :--------------------------------------: | :---------------------------------------: | :--------------------------------------: |
+| <img src="/qr/firstYear.webp" width=200> | <img src="/qr/secondYear.webp" width=200> | <img src="/qr/thirdYear.webp" width=200> |

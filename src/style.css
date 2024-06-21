@@ -232,7 +232,7 @@ a:focus {
 
   @media screen and (min-width: 512px) {
     grid-template-columns: 240px 1fr;
-    grid-template-rows: 40px 220px 440px 1fr 40px;
+    grid-template-rows: 40px 220px 450px 1fr 40px;
     grid-template-areas:
     "grid-header grid-header"
     "grid-category grid-main"

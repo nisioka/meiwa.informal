@@ -16,7 +16,7 @@ tags: ["LINE", "本日の活動"]
 
 以下のようにその日のブログの URL と、写真をカルーセルで配信します。
 
-![a](/gif/lineImage.gif)
+![](/gif/lineImage.gif)
 
 ## QR コード
 

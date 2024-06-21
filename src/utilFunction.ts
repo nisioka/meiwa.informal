@@ -61,8 +61,8 @@ export function mergePost(md?: MdPost, allFile?: AllFile) {
 }
 
 const categoryNames: { id: number; eng: string; jp: string }[] = [
-  { id: 1, eng: "one", jp: "園の手引" },
-  { id: 2, eng: "two", jp: "予定表" },
+  { id: 1, eng: "guidance", jp: "園の手引き" },
+  { id: 2, eng: "schedule", jp: "予定表" },
   { id: 3, eng: "childcare", jp: "預かり保育" },
   { id: 4, eng: "other", jp: "その他" },
 ]

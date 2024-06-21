@@ -135,22 +135,22 @@ export const createPages: GatsbyNode["createPages"] = async ({
     })
 
     // tag一覧追加
-    let tags = posts.reduce((tags, post) => {
-      post.tags.forEach(tag => {
-        tags = tag && !tags.includes(tag) ? tags.concat(tag) : tags
-      })
-      return tags
-    }, [] as string[])
-    // tag分ページを作成
-    tags.forEach(tag => {
-      createPage({
-        path: `/tag/${tag}`,
-        component: tagList,
-        context: {
-          tag,
-        },
-      })
-    })
+    // let tags = posts.reduce((tags, post) => {
+    //   post.tags.forEach(tag => {
+    //     tags = tag && !tags.includes(tag) ? tags.concat(tag) : tags
+    //   })
+    //   return tags
+    // }, [] as string[])
+    // // tag分ページを作成
+    // tags.forEach(tag => {
+    //   createPage({
+    //     path: `/tag/${tag}`,
+    //     component: tagList,
+    //     context: {
+    //       tag,
+    //     },
+    //   })
+    // })
   }
 }
 

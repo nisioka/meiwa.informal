@@ -93,7 +93,7 @@ const TagCloudList = styled.ul`
     text-decoration: none;
 
     &:hover {
-      color: var(--orange);
+      color: var(--main-color);
       text-decoration: underline;
     }
   }

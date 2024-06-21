@@ -2,6 +2,7 @@ import * as React from "react"
 import Header from "./header"
 import Footer from "./footer"
 import CategoryAll from "./category-all"
+import LineFriend from "./line-friend"
 
 type LayoutProps = {
   location: Location
@@ -21,6 +22,9 @@ const Layout = ({ location, children }: LayoutProps) => {
       </div>
       <div className="grid-category">
         <CategoryAll />
+      </div>
+      <div className="grid-tag">
+        <LineFriend />
       </div>
       <div className="grid-footer">
         <Footer />

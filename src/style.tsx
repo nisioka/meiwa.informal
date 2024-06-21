@@ -11,7 +11,7 @@ export const ContentsListHeader = styled.header`
       display: block;
       width: 98%;
       height: 3px;
-      background: var(--orange);
+      background: var(--main-color);
     }
   }
 `

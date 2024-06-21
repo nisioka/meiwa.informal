@@ -106,7 +106,7 @@ const PaginationWrapper = styled.nav`
 
       &.not-work span {
         text-decoration: none;
-        background: var(--orange);
+        background: var(--main-color);
         color: #fff;
         opacity: 0.5;
       }
@@ -117,9 +117,9 @@ const PaginationWrapper = styled.nav`
         display: flex;
         align-items: center;
         font-weight: 700;
-        color: var(--orange);
+        color: var(--main-color);
         border-radius: 5px;
-        border: 1px solid var(--orange);
+        border: 1px solid var(--main-color);
         padding: 0 10px;
       }
     }

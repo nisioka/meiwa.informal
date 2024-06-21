@@ -367,7 +367,7 @@ const Dl = styled.dl`
       text-decoration: none;
       border-radius: 3px;
       color: #fff;
-      background: var(--orange);
+      background: var(--main-color);
       padding: 2px 5px;
 
       &:hover {

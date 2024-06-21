@@ -11,7 +11,12 @@ type RelatedListProps = {
   tags: string[]
   title?: string
 }
-const RelatedList = ({ slug, category, tags, title = "関連記事" }: RelatedListProps) => {
+const RelatedList = ({
+  slug,
+  category,
+  tags,
+  title = "関連記事",
+}: RelatedListProps) => {
   const {
     allMarkdownRemark,
     allFile,

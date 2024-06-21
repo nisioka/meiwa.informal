@@ -42,12 +42,7 @@ type BlogPostTemplateProps = {
 }
 
 const BlogPostTemplate = ({
-  data: {
-    allFile,
-    markdownRemark: md,
-    mdPrevious,
-    mdNext,
-  },
+  data: { allFile, markdownRemark: md, mdPrevious, mdNext },
   location,
 }: BlogPostTemplateProps) => {
   const { siteMetadata } = config as { siteMetadata: SiteMetadata }
@@ -70,13 +65,13 @@ const BlogPostTemplate = ({
     id: mdPrevious?.id,
     title: mdPrevious?.frontmatter.title,
     slug: mdPrevious?.fields.slug.replace(/^\//, "").replace(/\/$/, ""),
-    category: mdPrevious?.frontmatter.category
+    category: mdPrevious?.frontmatter.category,
   }
   const next = {
     id: mdNext?.id,
     title: mdNext?.frontmatter.title,
     slug: mdNext?.fields.slug.replace(/^\//, "").replace(/\/$/, ""),
-    category: mdNext?.frontmatter.category
+    category: mdNext?.frontmatter.category,
   }
 
   return (
@@ -98,10 +93,7 @@ const BlogPostTemplate = ({
         </header>
         <div className="featuredImage">
           {post.gatsbyImage && (
-            <GatsbyImage
-              image={post.gatsbyImage}
-              alt={post.title}
-            />
+            <GatsbyImage image={post.gatsbyImage} alt={post.title} />
           )}
         </div>
         <Dl>

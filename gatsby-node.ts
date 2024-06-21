@@ -68,17 +68,16 @@ export const createPages: GatsbyNode["createPages"] = async ({
     tags: string[]
   }
 
-  const posts = result.data?.allMarkdownRemark.nodes
-    .map(post => {
-      return {
-        id: post.id,
-        slug: post.fields.slug.replace(/^\//, "").replace(/\/$/, ""),
-        component: `${blogPost}?__contentFilePath=${post.internal.contentFilePath}`,
-        featuredImagePath: post.frontmatter.featuredImagePath,
-        category: post.frontmatter.category,
-        tags: post.frontmatter.tags,
-      } as Post
-    })
+  const posts = result.data?.allMarkdownRemark.nodes.map(post => {
+    return {
+      id: post.id,
+      slug: post.fields.slug.replace(/^\//, "").replace(/\/$/, ""),
+      component: `${blogPost}?__contentFilePath=${post.internal.contentFilePath}`,
+      featuredImagePath: post.frontmatter.featuredImagePath,
+      category: post.frontmatter.category,
+      tags: post.frontmatter.tags,
+    } as Post
+  })
 
   // Create blog posts pages
   // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)

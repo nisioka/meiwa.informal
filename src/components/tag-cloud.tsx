@@ -3,10 +3,8 @@ import * as React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
-const TagCloud = ({title = "タグクラウド"}) => {
-  const {
-    allMarkdownRemark
-  }: { allMarkdownRemark: AllMarkdownRemark } =
+const TagCloud = ({ title = "タグクラウド" }) => {
+  const { allMarkdownRemark }: { allMarkdownRemark: AllMarkdownRemark } =
     useStaticQuery(
       graphql`
         query {
@@ -21,8 +19,7 @@ const TagCloud = ({title = "タグクラウド"}) => {
       `
     )
 
-  const postTags = allMarkdownRemark.nodes
-    .map(post => post.frontmatter.tags)
+  const postTags = allMarkdownRemark.nodes.map(post => post.frontmatter.tags)
 
   const tagsBase = postTags
     .reduce((tagCount, post) => {

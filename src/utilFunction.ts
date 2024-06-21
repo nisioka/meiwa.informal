@@ -50,16 +50,13 @@ export function mergePost(md?: MdPost, allFile?: AllFile) {
     date: md?.frontmatter.date,
     dateModified: md?.frontmatter.dateModified,
     description: md?.frontmatter.description,
-    altText:
-      md?.frontmatter.featuredImagePath ||
-      "",
+    altText: md?.frontmatter.featuredImagePath || "",
     gatsbyImage:
       getImage(
         allFeaturedImages[
           md?.frontmatter.featuredImagePath || "featured/defaultThumbnail.webp"
         ]
-      ) ||
-      getImage(allFeaturedImages["featured/defaultThumbnail.webp"]),
+      ) || getImage(allFeaturedImages["featured/defaultThumbnail.webp"]),
   } as CommonPost
 }
 

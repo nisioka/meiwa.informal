@@ -4,8 +4,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import { categoryAll, convertCategory } from "../utilFunction"
 
-const CategoryAll = ({title = "カテゴリ"}) => {
-
+const CategoryAll = ({ title = "カテゴリ" }) => {
   return (
     <CategoryAllTitle>
       <h5>{title}</h5>

@@ -33,7 +33,7 @@ const siteMetadata: SiteMetadata = {
   author: {
     name: `meiwa informal`,
     summary: `meiwa informal`,
-    avatarImagePath: 'src/static/favicon.webp'
+    avatarImagePath: "src/static/favicon.webp",
   },
   description: `明和幼稚園【松戸市稔台】に関する情報を配信する非公式サイトです。`,
   siteUrl: `https://meiwa.informal.tech.server-on.net`,

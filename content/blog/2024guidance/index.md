@@ -1,5 +1,5 @@
 ---
-title: "2024年度 園の手引き"
+title: "園の手引き"
 date: "2024-06-21"
 dateModified: "2024-06-21"
 description: "2024年度 園の手引き.pdf"

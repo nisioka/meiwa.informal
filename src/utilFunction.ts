@@ -32,7 +32,7 @@ export function mergePosts(
       } as CommonPost
     })
     .sort(
-      (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+      (a, b) => new Date(b.dateModified).getTime() - new Date(a.dateModified).getTime()
     ) as CommonPost[]
 }
 

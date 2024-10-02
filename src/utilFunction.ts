@@ -64,7 +64,8 @@ const categoryNames: { id: number; eng: string; jp: string }[] = [
   { id: 1, eng: "guidance", jp: "園の手引き" },
   { id: 2, eng: "schedule", jp: "予定表" },
   { id: 3, eng: "childcare", jp: "預かり保育" },
-  { id: 4, eng: "other", jp: "その他" },
+  { id: 4, eng: "event", jp: "イベント" },
+  { id: 99, eng: "other", jp: "その他" },
 ]
 
 export const categoryAll = categoryNames.sort(c => c.id).map(c => c.jp)
